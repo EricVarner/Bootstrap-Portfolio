@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <script>
+        for (loop = "yes"; loop = "no";)
+        {
+            var result;
+            var number;
+            var playerchoice = prompt("Rock Paper Scissors?");
+            playerchoice = playerchoice.toLowerCase()
+            
+        number = Math.floor(Math.random() * 3) + 1;
+
+        
+      if(number == 3)
+      {
+        result = "rock";
+      }
+      else if (number == 2)
+      {
+        result = "paper";
+      }
+      else 
+      {
+        result = "scissors";
+      }
+      
+      if (result == "paper" && playerchoice == "rock")
+      {
+        alert ("you lose")
+      }
+      else if (result == "rock" && playerchoice == "scissors")
+      {
+        alert ("you lose")
+      }
+      else if (result == "scissors" && playerchoice == "paper")
+      {
+        alert ("you lose")
+      }
+      
+      
+      else if (result == "paper" && playerchoice == "paper")
+      {
+        alert ("you tie")
+      }
+      else if (result == "rock" && playerchoice == "rock")
+      {
+        alert ("you tie")
+      }
+      else if (result == "scissors" && playerchoice == "scissors")
+      {
+        alert ("you tie")
+      }
+      
+      
+      else if (result == "paper" && playerchoice == "scissors")
+      {
+        alert ("you win")
+      }
+      else if (result == "rock" && playerchoice == "paper")
+      {
+        alert ("you win")
+      }
+      else if (result == "scissors" && playerchoice == "rock")
+      {
+        alert ("you win")
+      }
+        }
+        </script>
+        
+</body>
+</html>
